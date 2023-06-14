@@ -86,8 +86,11 @@ height: 30px;
 .width1{
 width: 600px}
 
-
 .activ{
 color:#A52A2A;
+}
+
+.activBox{
+background-color: green;
 }
 

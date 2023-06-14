@@ -1,3 +1,5 @@
+        // счетчик для переключений цветов
+        let count = 0
         function OpenSide(){
             alert("Резюме Григорьев Николая Александровича");
         }
@@ -17,9 +19,23 @@
         let qwe = (num > 21) ? "более 21": "не более 21";
         alert(qwe);
         }
+        // функция для управления кнопкой
 
         function click_of_btn1(){
-        alert("CLICK!");
+        //alert("CLICK!");
+// получаем первый элемент
+        let box1 = document.getElementsByClassName("box");
+
+        // console.log(box1[0]);
+        // переключение цвета
+        if (count == 0){
+        count += 1
+        element.classList.add("activBox");
+        }
+        else {
+        count = 0
+        element.classList.remove("activBox");
+        }
         }
 
 
@@ -47,7 +63,7 @@
 
 // присвоить по id (document - массив всех элементов страницы)
 let element = document.getElementById('el1');
-console.log(element);
+//console.log(element);
 // добавить класс
 element.classList.add("activ");
 // удалить класс
@@ -55,5 +71,5 @@ element.classList.remove("activ");
 
 // создаю кнопку и механизм "слушетеля кнопки". ("действие", функция)
 let btn1 = document.getElementById('btn1');
-console.log(btn1);
+//console.log(btn1);
 btn1.addEventListener("click", click_of_btn1)
