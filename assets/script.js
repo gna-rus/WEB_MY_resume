@@ -24,18 +24,25 @@
         function click_of_btn1(){
         //alert("CLICK!");
 // получаем первый элемент
-        let box1 = document.getElementsByClassName("box");
+        let box1 = document.getElementsByClassName("wrapper");
 
         // console.log(box1[0]);
-        // переключение цвета
-        if (count == 0){
-        count += 1
-        element.classList.add("activBox");
+        // переключение цвета (2 варианта)
+//        if (count == 0){
+//        count += 1
+//        element.classList.add("activBox");
+//        }
+//        else {
+//        count = 0
+//        element.classList.remove("activBox");
+//        }
+        element.classList.toggle("activBox");
         }
-        else {
-        count = 0
-        element.classList.remove("activBox");
-        }
+
+        function click_of_btn2()
+        {
+        let btn2 = document.getElementById("date_of_born");
+        btn2.textContent = "AAAAAAA";
         }
 
 
@@ -73,3 +80,7 @@ element.classList.remove("activ");
 let btn1 = document.getElementById('btn1');
 //console.log(btn1);
 btn1.addEventListener("click", click_of_btn1)
+
+let btn2 = document.getElementById('btn2');
+//console.log(btn1);
+btn2.addEventListener("click", click_of_btn2)
