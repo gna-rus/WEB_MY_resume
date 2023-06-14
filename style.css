@@ -16,6 +16,21 @@ a{
 cursor: pointer;
 }
 
+
+hr{
+background-color: green;
+height: 3px;}
+
+button{
+width: 150px;
+height:30px;
+font-size: 14px;
+color: yellow;
+background-color: green;
+margin-left: 25px;
+}
+
+
 .title {
     color: darkorange;
 }
@@ -41,10 +56,6 @@ padding: 0px;}
 .image{
 padding: 20px;
 }
-
-hr{
-background-color: green;
-height: 3px;}
 
 .wrapper_head{
 display: inline-block;
@@ -74,4 +85,9 @@ height: 30px;
 
 .width1{
 width: 600px}
+
+
+.activ{
+color:#A52A2A;
+}
 
